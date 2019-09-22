@@ -36,7 +36,7 @@ function custom_post_type() {
 		'label'                 => __( 'Post Type', 'text_domain' ),
 		'description'           => __( 'Post Type Description', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => false,
+		'supports'              => array('title', 'editor'),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
