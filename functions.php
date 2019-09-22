@@ -205,3 +205,4 @@ require_once get_stylesheet_directory() . '/functions/genesis_mods.php';
 require_once get_stylesheet_directory() . '/functions/acf_fields.php';
 require_once get_stylesheet_directory() . '/functions/crear_bloque_acf.php';
 require_once get_stylesheet_directory() . '/functions/post-type-codigo.php';
+add_filter('acf/settings/remove_wp_meta_box', '__return_false');
