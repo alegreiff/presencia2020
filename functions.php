@@ -202,3 +202,4 @@ function genesis_sample_comments_gravatar( $args ) {
 
 /* INICIO DE LAS MODIFICACIONES DE JAIME DE GREIFF */
 require_once get_stylesheet_directory() . '/functions/genesis_mods.php';
+require_once get_stylesheet_directory() . '/functions/acf_fields.php';
