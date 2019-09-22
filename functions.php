@@ -199,3 +199,4 @@ function genesis_sample_comments_gravatar( $args ) {
 	return $args;
 
 }
+require_once get_stylesheet_directory() . '/functions/genesis_mods.php';
