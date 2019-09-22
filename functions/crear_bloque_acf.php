@@ -6,11 +6,12 @@ function register_acf_block_types() {
 acf_register_block_type(array(
     'name'              => 'testimonial',
     'title'             => __('Testimonial'),
-    'description'       => __('A custom testimonial block.'),
+    'description'       => __('Un bloque de testimoños.'),
     'render_template'   => 'template-parts/blocks/testimonial/testimonial.php',
-    'category'          => 'formatting',
+    'category'          => 'Miss bloques',
     'icon'              => 'admin-comments',
     'keywords'          => array( 'testimonial', 'quote' ),
+    'mode'              => 'auto',
 ));
 }
 
