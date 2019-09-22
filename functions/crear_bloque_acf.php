@@ -9,7 +9,7 @@ acf_register_block_type(array(
     'description'       => __('Un bloque de testimoños.'),
     'render_template'   => 'template-parts/blocks/testimonial/testimonial.php',
     'mode'              => 'auto',
-    'category'          => 'Miss bloques',
+    'category'          => 'common',
     'icon'              => 'admin-comments',
     'keywords'          => array( 'testimonial', 'quote' ),
     
