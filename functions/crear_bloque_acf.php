@@ -8,10 +8,11 @@ acf_register_block_type(array(
     'title'             => __('Testimonial'),
     'description'       => __('Un bloque de testimoños.'),
     'render_template'   => 'template-parts/blocks/testimonial/testimonial.php',
+    'mode'              => 'auto',
     'category'          => 'Miss bloques',
     'icon'              => 'admin-comments',
     'keywords'          => array( 'testimonial', 'quote' ),
-    'mode'              => 'auto',
+    
 ));
 }
 
