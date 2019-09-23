@@ -6,11 +6,3 @@ body {
   background: $colorbase;
   border: 4px grey solid;
 }
-
-.menu-icon-codigo .wp-menu-image:before {
-  color: red;
-}
-
-.menu-icon-codigo:hover .wp-menu-image:before {
-  color: green;
-}

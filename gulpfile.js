@@ -6,7 +6,7 @@ const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 
 function css() {
-    return src('./sass/presencia.scss', { sourcemaps: true })
+    return src('./sass/*.scss', { sourcemaps: true })
         .pipe(sass())
         .pipe(minifyCSS())
         .pipe(dest('./'), { sourcemaps: true })
