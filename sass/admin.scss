@@ -1,5 +1,7 @@
+$base: red;
+
 #wpwrap {
-  background-color: rgb(22, 129, 76);
+  background-color: lighten($base, 10%);
 }
 .menu-icon-codigo div.wp-menu-image:before,
 .menu-icon-post div.wp-menu-image:before {
@@ -13,11 +15,11 @@
   font-size: 1.5em;
 }
 div#adminmenuback {
-  background-color: aquamarine;
+  background-color: lighten($base, 20%);
 }
 div#adminmenuwrap {
-  background-color: rgb(185, 137, 32);
+  background-color: lighten($base, 30%);
 }
 ul#adminmenu {
-  background-color: crimson;
+  background-color: lighten($base, 40%);
 }
