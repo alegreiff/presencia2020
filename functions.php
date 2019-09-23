@@ -205,5 +205,5 @@ require_once get_stylesheet_directory() . '/functions/generales.php';
 require_once get_stylesheet_directory() . '/functions/genesis_mods.php';
 require_once get_stylesheet_directory() . '/functions/acf_fields.php';
 require_once get_stylesheet_directory() . '/functions/crear_bloque_acf.php';
-require_once get_stylesheet_directory() . '/functions/post-type-codigo.php';
+//require_once get_stylesheet_directory() . '/functions/post-type-codigo.php';
 
