@@ -1,3 +1,4 @@
+<?php
 /* Hoja de estilo CUSTOM (culpa de postcss font...)*/
 add_action( 'wp_enqueue_scripts', 'maguared_estilos_css', 20 );
 function maguared_estilos_css() {
