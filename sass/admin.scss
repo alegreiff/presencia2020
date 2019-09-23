@@ -1,7 +1,7 @@
 $base: rgb(3, 87, 197);
 
 #wpwrap {
-  background-color: lighten($base, 32%);
+  background-color: lighten(invert($base), 48%);
 }
 .menu-icon-codigo div.wp-menu-image:before,
 .menu-icon-post div.wp-menu-image:before {
