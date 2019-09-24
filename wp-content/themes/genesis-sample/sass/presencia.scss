@@ -22,7 +22,7 @@ body {
 /* */
 .site-inner {
   display: grid;
-  grid-template-columns: 1fr 280px;
+  grid-template-columns: 1fr, 280px;
 }
 .content {
   background: lime;
