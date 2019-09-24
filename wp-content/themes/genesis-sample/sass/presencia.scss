@@ -21,8 +21,13 @@ body {
 
 .presencia_inicio {
   background: crimson;
-  border: 11px yellow solid;
 }
+.presencia_full {
+  width: 100%;
+  padding: 0.4em;
+  border: grey solid;
+}
+
 /* */
 /*
 .content-sidebar-wrap {
