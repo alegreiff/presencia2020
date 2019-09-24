@@ -9,6 +9,7 @@ function loop_persona_cine()
         while (have_posts())
         {
             the_post();
+            $codigo = get_field('cod_tipo');
             
 ?>
 	<div class="personacine">
@@ -16,6 +17,7 @@ function loop_persona_cine()
 			<h2><?php the_title(); ?></h2>
 			
 		</div>
+        <p><?php echo $codigo;?></p>
 		
 		<div class="infopersona">
 			<div class="infopersonacine">
