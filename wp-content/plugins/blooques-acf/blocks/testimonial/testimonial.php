@@ -34,6 +34,7 @@ $text_color = get_field('text_color');
 
 ?>
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
+    <p>LiliCasas</p>
     <blockquote class="testimonial-blockquote">
     <h2>Jaime de Griss</h2>
         <span class="testimonial-text"><?php echo $text; ?></span>

@@ -7,7 +7,7 @@ acf_register_block_type(array(
     'name'              => 'testimonial',
     'title'             => __('Testimonial'),
     'description'       => __('Un bloque de testimoños.'),
-    'render_template'   => 'template-parts/blocks/testimonial/testimonial.php',
+    'render_template'   => 'blocks/testimonial/testimonial.php',
     'mode'              => 'auto',
     'category'          => 'common',
     'icon'              => 'admin-comments',
