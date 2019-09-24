@@ -22,6 +22,8 @@ function register_acf_block_types() {
         'category'          => 'common',
         'icon'              => 'admin-comments',
         'keywords'          => array( 'testimonial', 'quote' ),
+        'enqueue_style' => get_template_directory_uri() . 'css/bloques/testimonial.css',
+
         
     ));
     }
