@@ -1705,7 +1705,7 @@ p.entry-meta {
 	--------------------------------------------- */
 
   .site-inner {
-    max-width: 1140px;
+    max-width: 1440px;
     background: red;
   }
 
@@ -1714,7 +1714,7 @@ p.entry-meta {
 
   .content {
     float: left;
-    width: 65%;
+    width: 75%;
     background: crimson;
   }
 
@@ -1733,7 +1733,7 @@ p.entry-meta {
 
   .sidebar {
     float: right;
-    width: 30%;
+    width: 20%;
     background: violet;
   }
 
