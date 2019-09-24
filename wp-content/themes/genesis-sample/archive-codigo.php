@@ -1,7 +1,18 @@
 <?php
 remove_action('genesis_loop', 'genesis_do_loop');
 add_action('genesis_loop', 'loop_persona_cine');
+function my_own_body_classes($classes) {
 
+    // Add Classes to body if the post type archive is 'publikasjoner'
+    if ( is_post_type_archive( 'codigo' ) ) {
+        $classes[] = 'presencia_full';
+    }
+    // Go for other posts types here
+
+
+    return $classes;
+}
+add_filter('body_class', 'my_own_body_classes');
 function loop_persona_cine()
 
 {
