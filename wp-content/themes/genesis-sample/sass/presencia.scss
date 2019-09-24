@@ -19,21 +19,19 @@ body {
   border: 1px grey solid;
 }
 
-.site-inner,
-.wrap {
-  margin: 0 auto;
-
-  background: lime;
+/* */
+.site-inner {
+  max-width: 1440px;
+  background: rgb(36, 36, 136);
 }
-
 .content {
-  float: right;
-  width: 600px;
-  background: yellow;
+  width: 80%;
+  background: rgb(97, 97, 245);
 }
 
-.sidebar-primary {
-  float: right;
-  width: 560px;
-  background: rgb(219, 16, 175);
+.sidebar {
+  width: 25%;
+  background: rgb(65, 65, 148);
 }
+
+/* */
