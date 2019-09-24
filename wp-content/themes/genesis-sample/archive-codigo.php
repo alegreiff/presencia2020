@@ -3,7 +3,9 @@ remove_action('genesis_loop', 'genesis_do_loop');
 add_action('genesis_loop', 'loop_persona_cine');
 
 function loop_persona_cine()
+
 {
+    echo '<div class="cod_archivo">';
     if (have_posts())
     {
         while (have_posts())
@@ -13,26 +15,26 @@ function loop_persona_cine()
             $contenido = get_the_content();
             
 ?>
-	<div class="personacine">
-		<div class="nombrepaispersonacine">
+	<div class="cod_elemento_archivo">
+		
 			<h2><?php the_title(); ?></h2>
 			
-		</div>
-        <p><?php 
+		
+        <?php 
             print_r("<pre>");
             print_r($codigo);
             print_r("</pre>");
-        ?></p>
+        ?>
 		
-		<div class="infopersona">
-			<div class="infopersonacine">
+		
+			
 				<pre>
                 <?php echo $contenido; ?>
                 </pre>
-			</div>
 			
 			
-		</div>
+			
+		
 		
 	</div>
 	
@@ -40,7 +42,7 @@ function loop_persona_cine()
         } // end while
         
     } // end if
-    
+    echo '</div>';
 }
 genesis();
 

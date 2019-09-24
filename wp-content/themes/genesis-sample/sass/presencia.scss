@@ -9,3 +9,12 @@ body {
 .personacine {
   border: 3px crimson solid;
 }
+
+.cod_archivo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.cod_elemento_archivo {
+  padding: 0.8em;
+  border: 1px grey solid;
+}
