@@ -21,17 +21,17 @@ body {
 
 /* */
 .site-inner {
-  max-width: 1440px !important;
-  background: rgb(139, 13, 170);
+  display: grid;
+  grid-template-columns: 1fr 280px;
 }
 .content {
-  width: 80% !important;
-  background: rgb(90, 9, 66);
+  background: lime;
 }
 
 .sidebar {
-  width: 25% !important;
-  background: rgb(198, 23, 204);
+  background: yellowgreen;
 }
-
+@media all and (max-width: 699px) and (min-width: 520px) {
+  /* Your selectors */
+}
 /* */
