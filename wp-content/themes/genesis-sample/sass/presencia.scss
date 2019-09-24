@@ -18,3 +18,22 @@ body {
   padding: 0.8em;
   border: 1px grey solid;
 }
+
+.site-inner,
+.wrap {
+  margin: 0 auto;
+  max-width: 1200px;
+  background: lime;
+}
+
+.content {
+  float: right;
+  width: 800px;
+  background: yellow;
+}
+
+.sidebar-primary {
+  float: right;
+  width: 360px;
+  background: rgb(219, 16, 175);
+}
