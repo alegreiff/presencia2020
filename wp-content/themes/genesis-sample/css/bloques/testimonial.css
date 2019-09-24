@@ -1,3 +1,4 @@
-img {
-  border: 10px red dashed;
+.testimonial-image img {
+  border: 3px red dashed;
+  border-radius: 0.875em;
 }
