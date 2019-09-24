@@ -22,14 +22,15 @@ body {
 /* */
 .site-inner {
   display: grid;
-  grid-template-columns: 1fr, 280px;
+  grid-template-columns: auto 280px;
+  column-gap: 2em;
 }
 .content {
-  background: lime;
+  background: rgb(58, 190, 6);
 }
 
 .sidebar {
-  background: yellowgreen;
+  background: rgb(171, 13, 219);
 }
 @media all and (max-width: 699px) and (min-width: 520px) {
   /* Your selectors */
