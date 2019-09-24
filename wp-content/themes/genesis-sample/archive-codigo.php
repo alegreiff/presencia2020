@@ -1,6 +1,14 @@
 <?php
 remove_action('genesis_loop', 'genesis_do_loop');
 add_action('genesis_loop', 'loop_persona_cine');
+
+function wpnj_cpt_layout() {
+    if( 'codigo' == get_post_type() ) {
+        return 'full-width-content';
+    }
+}
+add_filter( 'genesis_site_layout', 'wpnj_cpt_layout' );
+
 function my_own_body_classes($classes) {
 
     // Add Classes to body if the post type archive is 'publikasjoner'
