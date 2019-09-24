@@ -17,7 +17,11 @@ function loop_persona_cine()
 			<h2><?php the_title(); ?></h2>
 			
 		</div>
-        <p><?php echo $codigo;?></p>
+        <p><?php 
+            print_r("<pre>");
+            print_r($codigo);
+            print_r("</pre>");
+        ?></p>
 		
 		<div class="infopersona">
 			<div class="infopersonacine">
