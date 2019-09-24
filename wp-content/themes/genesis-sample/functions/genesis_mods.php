@@ -8,13 +8,3 @@ function remove_genesis_post_scripts_box() {
 remove_meta_box( 'genesis_inpost_scripts_box', 'post', 'normal' ); 
 }
 
-
-//* Do NOT include the opening php tag shown above. Copy the code shown below.
-//* Add custom body class to the head
-add_filter( 'body_class', 'sp_body_class' );
-function sp_body_class( $classes ) {
-	
-	$classes[] = 'custom-classjaime';
-	return $classes;
-	
-}
