@@ -25,7 +25,9 @@ function loop_persona_cine()
 		
 		<div class="infopersona">
 			<div class="infopersonacine">
-				<?php the_content(); ?>
+				<pre>
+                <?php the_content(); ?>
+                </pre>
 			</div>
 			
 			
