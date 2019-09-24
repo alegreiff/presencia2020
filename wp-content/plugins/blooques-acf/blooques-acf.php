@@ -17,7 +17,7 @@ function register_acf_block_types() {
         'name'              => 'testimonial',
         'title'             => __('Testimonial'),
         'description'       => __('Un bloque de testimoños.'),
-        'render_template'   => 'blocks/testimonial/testimonial.php',
+        'render_template'   => plugin_dir_url( __FILE__ ) . 'blocks/testimonial/testimonial.php',
         'mode'              => 'auto',
         'category'          => 'common',
         'icon'              => 'admin-comments',
