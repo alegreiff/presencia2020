@@ -10,6 +10,7 @@ function loop_persona_cine()
         {
             the_post();
             $codigo = get_field('cod_tipo');
+            $contenido = get_the_content();
             
 ?>
 	<div class="personacine">
@@ -26,7 +27,7 @@ function loop_persona_cine()
 		<div class="infopersona">
 			<div class="infopersonacine">
 				<pre>
-                <?php the_content(); ?>
+                <?php echo $contenido; ?>
                 </pre>
 			</div>
 			
