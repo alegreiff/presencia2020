@@ -22,9 +22,10 @@ body {
 .presencia_inicio {
   background: crimson;
 }
-.presencia_full {
+.presencia_full #genesis-content {
   width: 100%;
   padding: 0.4em;
+  background: white;
   border: grey solid;
 }
 
