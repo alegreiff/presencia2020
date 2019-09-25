@@ -23,8 +23,6 @@ function loop_single_codigo()
             
 ?>
 	<div class="cod_elemento_archivo">
-		
-            <?php echo 'pailas' . $contenido . '<hr/>';?>
             <h2><?php the_title(); ?></h2>
 			
 		
