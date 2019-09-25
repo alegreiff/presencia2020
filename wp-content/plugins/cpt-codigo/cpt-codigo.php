@@ -48,7 +48,11 @@ function crea_codigo() {
 		'menu_icon'             => 'dashicons-format-status',
 		'label'                 => __( 'Codigo', 'presencia' ),
 		'description'           => __( 'Códigos para GENESIS', 'presencia' ),
+		"capability_type" => "post",
 		
+		
+		"public" => true,
+
 	);
 	register_post_type( 'codigo', $args );
 
