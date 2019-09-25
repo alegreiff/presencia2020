@@ -44,25 +44,30 @@ function crea_codigo() {
 	);
 	$args = array(
         /*'menu_icon' => plugins_url('cpt-codigo/images/xcode.png'),*/
-        'menu_icon'             => 'dashicons-format-status',
+		'labels'                => $labels,
+		'menu_icon'             => 'dashicons-format-status',
 		'label'                 => __( 'Codigo', 'presencia' ),
 		'description'           => __( 'Códigos para GENESIS', 'presencia' ),
-		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail' ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
-		'hierarchical'          => false,
-		'public'                => true,
-		'show_ui'               => true,
-		'show_in_rest'          => true,
-		'show_in_menu'          => true,
-		'menu_position'         => 5,
-		'show_in_admin_bar'     => true,
-		'show_in_nav_menus'     => true,
-		'can_export'            => true,
-		'has_archive'           => true,
-		'exclude_from_search'   => false,
-		'publicly_queryable'    => true,
-		'capability_type'       => 'post',
+		
+		
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"delete_with_user" => false,
+		"show_in_rest" => true,
+		"rest_base" => "libros",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"has_archive" => true,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => false,
+		"query_var" => true,
+		"menu_position" => 7,
+		"supports" => array( "title", "editor" ),
 	);
 	register_post_type( 'codigo', $args );
 
