@@ -32,9 +32,9 @@ function loop_single_codigo()
 		
 		
 			
-				<pre>
-                <?php echo $contenido; ?>
-                </pre>
+				<h3>Pilláteste</h3>
+                <?php the_content(); ?>
+                
 			
 			
 			
