@@ -723,7 +723,7 @@ th:last-child {
 --------------------------------------------- */
 
 .site-container {
-  animation: fadein 6s;
+  animation: fadein 0.5s;
   word-wrap: break-word;
 }
 
