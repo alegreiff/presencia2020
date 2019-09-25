@@ -34,7 +34,7 @@ function loop_persona_cine()
             $contenido = get_the_content();
             $tipos = [];
             foreach ($codigo as $code){
-                $tipos = $code;
+                $tipos[] = $code;
             }
             
 ?>
