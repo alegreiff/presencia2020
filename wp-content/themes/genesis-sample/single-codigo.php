@@ -13,6 +13,7 @@ function loop_single_codigo()
             the_post();
             $codigo = get_field('cod_tipo');
             $contenido = get_the_content();
+            apply_filters( 'the_content', $contenido );
             $tipos = [];
             foreach ($codigo as $code){
                 $tipos[] = $code;
