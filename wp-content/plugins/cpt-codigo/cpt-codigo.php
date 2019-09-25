@@ -21,7 +21,7 @@ function crea_codigo() {
 		'archives'              => __( 'Item Archives', 'presencia' ),
 		'attributes'            => __( 'Item Attributes', 'presencia' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'presencia' ),
-		'all_items'             => __( 'Todos los códigos', 'presencia' ),
+		'all_items'             => __( 'Toditicos los códigos', 'presencia' ),
 		'add_new_item'          => __( 'Agregar código', 'presencia' ),
 		'add_new'               => __( 'Añadir nuevo', 'presencia' ),
 		'new_item'              => __( 'Nuevo código', 'presencia' ),
@@ -66,7 +66,7 @@ function crea_codigo() {
 		"hierarchical" => false,
 		"rewrite" => false,
 		"query_var" => true,
-		"menu_position" => 7,
+		"menu_position" => 9,
 		"supports" => array( "title", "editor" ),
 	);
 	register_post_type( 'codigo', $args );
