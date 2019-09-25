@@ -1,6 +1,6 @@
 <?php
 remove_action('genesis_loop', 'genesis_do_loop');
-add_action('genesis_loop', 'loop_persona_cine');
+add_action('genesis_loop', 'loop_archivo_codigo');
 
 function presencia_plantilla_archive_cpt() {
     if( 'codigo' == get_post_type() ) {
@@ -21,7 +21,7 @@ function presencia_clase_body($classes) {
     return $classes;
 }
 add_filter('body_class', 'presencia_clase_body');
-function loop_persona_cine()
+function loop_archivo_codigo()
 
 {
     echo '<div class="cod_archivo">';
@@ -44,10 +44,7 @@ function loop_persona_cine()
 			
 		
         <?php 
-            print_r("<pre>");
-            print_r($tipos);
-            print_r("</pre>");
-            echo '<div class="losroles">';
+            echo '<div class="cod_tipo">';
             echo implode(" / ", $tipos);
             echo '</div>';
         ?>
