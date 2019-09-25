@@ -21,7 +21,8 @@ function loop_single_codigo()
 ?>
 	<div class="cod_elemento_archivo">
 		
-			<h2><?php the_title(); ?></h2>
+            <?php echo 'pailas' . $contenido . '<hr/>';?>
+            <h2><?php the_title(); ?></h2>
 			
 		
         <?php 
