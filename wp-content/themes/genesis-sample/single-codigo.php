@@ -12,7 +12,9 @@ function loop_single_codigo()
         {
             the_post();
             $codigo = get_field('cod_tipo');
+            //$contenido = get_the_content();
             $contenido = get_the_content();
+            $contenido = apply_filters( 'the_content', $contenido );
             
             $tipos = [];
             foreach ($codigo as $code){
@@ -22,7 +24,7 @@ function loop_single_codigo()
 ?>
 	<div class="cod_elemento_archivo">
 		
-            <?php echo 'pailas' . esc_html__($contenido) . '<hr/>';?>
+            <?php echo 'pailas' . $contenido . '<hr/>';?>
             <h2><?php the_title(); ?></h2>
 			
 		
