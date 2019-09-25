@@ -21,7 +21,7 @@ function crea_codigo() {
 		'archives'              => __( 'Item Archives', 'presencia' ),
 		'attributes'            => __( 'Item Attributes', 'presencia' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'presencia' ),
-		'all_items'             => __( 'Toditicos los códigos', 'presencia' ),
+		'all_items'             => __( 'Todos los códigos', 'presencia' ),
 		'add_new_item'          => __( 'Agregar código', 'presencia' ),
 		'add_new'               => __( 'Añadir nuevo', 'presencia' ),
 		'new_item'              => __( 'Nuevo código', 'presencia' ),
@@ -44,15 +44,25 @@ function crea_codigo() {
 	);
 	$args = array(
         /*'menu_icon' => plugins_url('cpt-codigo/images/xcode.png'),*/
-		'labels'                => $labels,
-		'menu_icon'             => 'dashicons-format-status',
+        'menu_icon'             => 'dashicons-format-status',
 		'label'                 => __( 'Codigo', 'presencia' ),
 		'description'           => __( 'Códigos para GENESIS', 'presencia' ),
-		"capability_type" => "post",
-		
-		
-		"public" => true,
-
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_rest'          => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'post',
 	);
 	register_post_type( 'codigo', $args );
 
