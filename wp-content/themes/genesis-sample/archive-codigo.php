@@ -2,14 +2,14 @@
 remove_action('genesis_loop', 'genesis_do_loop');
 add_action('genesis_loop', 'loop_persona_cine');
 
-function wpnj_cpt_layout() {
+function presencia_plantilla_archive_cpt() {
     if( 'codigo' == get_post_type() ) {
         return 'full-width-content';
     }
 }
-add_filter( 'genesis_site_layout', 'wpnj_cpt_layout' );
+add_filter( 'genesis_site_layout', 'presencia_plantilla_archive_cpt' );
 
-function my_own_body_classes($classes) {
+function presencia_clase_body($classes) {
 
     // Add Classes to body if the post type archive is 'publikasjoner'
     if ( is_post_type_archive( 'codigo' ) ) {
@@ -20,7 +20,7 @@ function my_own_body_classes($classes) {
 
     return $classes;
 }
-add_filter('body_class', 'my_own_body_classes');
+add_filter('body_class', 'presencia_clase_body');
 function loop_persona_cine()
 
 {
@@ -32,6 +32,10 @@ function loop_persona_cine()
             the_post();
             $codigo = get_field('cod_tipo');
             $contenido = get_the_content();
+            $tipos = [];
+            foreach ($codigo as $code){
+                $tipos = $code;
+            }
             
 ?>
 	<div class="cod_elemento_archivo">
@@ -43,6 +47,9 @@ function loop_persona_cine()
             print_r("<pre>");
             print_r($codigo);
             print_r("</pre>");
+            echo '<div class="losroles">';
+            echo implode(" / ", $tipos);
+            echo '</div>';
         ?>
 		
 		
