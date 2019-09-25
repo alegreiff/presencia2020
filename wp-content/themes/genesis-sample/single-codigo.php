@@ -32,9 +32,6 @@ function loop_single_codigo()
             echo '</div>';
         ?>
 		
-		
-			
-				<h3>Pilláteste</h3>
                 <?php the_content(); ?>
                 
 			
