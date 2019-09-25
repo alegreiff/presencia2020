@@ -45,7 +45,7 @@ function loop_persona_cine()
 		
         <?php 
             print_r("<pre>");
-            print_r($codigo);
+            print_r($tipos);
             print_r("</pre>");
             echo '<div class="losroles">';
             echo implode(" / ", $tipos);
