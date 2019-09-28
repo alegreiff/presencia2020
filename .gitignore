@@ -1,8 +1,0 @@
-wp-content/uploads/
-wp-content/languages/
-wp-content/upgrade/
-wp-content/index.php
-wp-content/themes/genesis-sample/node_modules
-wp-content/themes/genesis-sample/yarn.lock
-wp-content/themes/genesis-sample/package.json
-wp-content/themes/genesis-sample/package-lock.json

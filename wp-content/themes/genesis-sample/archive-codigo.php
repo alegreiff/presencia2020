@@ -2,6 +2,7 @@
 remove_action('genesis_loop', 'genesis_do_loop');
 add_action('genesis_loop', 'loop_archivo_codigo');
 
+
 function presencia_plantilla_archive_cpt() {
     if( 'codigo' == get_post_type() ) {
         return 'full-width-content';
