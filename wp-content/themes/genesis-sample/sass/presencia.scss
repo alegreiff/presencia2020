@@ -1,0 +1,50 @@
+@import "parciales/variables";
+
+body {
+  // font-weight: 100;
+  //color: red;
+  background: $colorbase;
+  border: 4px grey solid;
+}
+.personacine {
+  border: 3px crimson solid;
+}
+
+.cod_archivo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.cod_elemento_archivo {
+  padding: 0.8em;
+  border: 1px grey solid;
+}
+
+.presencia_inicio {
+  background: rgb(83, 2, 83);
+}
+.presencia_full #genesis-content {
+  width: 100%;
+  padding: 0.4em;
+  background: white;
+  border: grey solid;
+  min-height: 100vh;
+}
+
+/* */
+/*
+.content-sidebar-wrap {
+  display: grid;
+  grid-template-columns: auto 280px;
+  column-gap: 2em;
+}
+.content {
+  background: rgb(58, 190, 6);
+}
+
+.sidebar {
+  background: rgb(171, 13, 219);
+}
+@media all and (max-width: 699px) and (min-width: 520px) {
+  
+}*/
+/* */

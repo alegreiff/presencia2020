@@ -625,12 +625,28 @@ ul.wp-block-archives,
 	}
 
 	li {
+<<<<<<< HEAD
 
 		> a {
 			@include font-family( $font__heading );
 			font-size: calc(#{$font__size_base} * #{$font__size-ratio});
 			font-weight: bold;
 			line-height: $font__line-height-heading;
+=======
+		color: $color__text-light;
+		@include font-family( $font__heading );
+		font-size: calc(#{$font__size_base} * #{$font__size-ratio});
+		font-weight: bold;
+		line-height: $font__line-height-heading;
+		padding-bottom: ( .75 * $size__spacing-unit );
+
+		&.menu-item-has-children,
+		&:last-child {
+			padding-bottom: 0;
+		}
+
+		a {
+>>>>>>> 360e155dc7220c3f83579d84fdb64c60892b857f
 			text-decoration: none;
 		}
 
@@ -655,6 +671,7 @@ ul.wp-block-archives,
 
 }
 
+<<<<<<< HEAD
 /** === Latest Posts === */
 .wp-block-latest-posts {
 
@@ -689,6 +706,10 @@ ul.wp-block-archives,
 	}
 
 	&.is-grid {
+=======
+/** === Latest Posts grid view === */
+.wp-block-latest-posts.is-grid {
+>>>>>>> 360e155dc7220c3f83579d84fdb64c60892b857f
 		li {
 			border-top: 2px solid $color__border;
 			padding-top: (1 * $size__spacing-unit);
@@ -706,7 +727,10 @@ ul.wp-block-archives,
 			}
 		}
 	}
+<<<<<<< HEAD
 }
+=======
+>>>>>>> 360e155dc7220c3f83579d84fdb64c60892b857f
 
 /** === Latest Comments === */
 

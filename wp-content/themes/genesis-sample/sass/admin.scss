@@ -1,0 +1,25 @@
+$base: rgb(3, 87, 197);
+
+#wpwrap {
+  background-color: lighten(invert($base), 21%);
+}
+.menu-icon-codigo div.wp-menu-image:before,
+.menu-icon-post div.wp-menu-image:before {
+  color: rgb(252, 207, 7) !important;
+  font-weight: bolder;
+}
+.menu-icon-codigo:hover div.wp-menu-image:before,
+.menu-icon-post:hover div.wp-menu-image:before {
+  color: rgb(207, 5, 123) !important;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+div#adminmenuback {
+  background-color: lighten($base, 14%);
+}
+div#adminmenuwrap {
+  background-color: lighten($base, 20%);
+}
+ul#adminmenu {
+  background-color: lighten($base, 26%);
+}
