@@ -23,7 +23,12 @@ function js() {
 }
 
 function browser() {
-
+    browserSync.init({
+        proxy: 'presencia.local/',
+        files: [
+            './**/*.php'
+        ]
+    });
 
     watch('./sass/**/*.scss', css);
     watch('./js/*.js', js).on('change', browserSync.reload);
